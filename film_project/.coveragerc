@@ -1,0 +1,3 @@
+[run]
+include = film_project/*
+omit = *migrations*
