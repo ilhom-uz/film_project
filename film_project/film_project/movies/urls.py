@@ -20,6 +20,7 @@ urlpatterns = [
     #     name='redirect'
     # ),
 
+
     # # URL pattern for the UserDetailView
     # url(
     #     regex=r'^(?P<username>[\w.@+-]+)/$',
@@ -33,4 +34,9 @@ urlpatterns = [
     #     view=views.UserUpdateView.as_view(),
     #     name='update'
     # ),
+    # Url pattern for Movies page
+    url(r'^$', views.index, name='index'),
+
+
 ]
+
