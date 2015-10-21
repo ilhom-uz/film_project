@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% if movies_list %}
+    <ul>
+    {% for mlist in movies_list %}
+
+         <li><a href="{% url 'movies:detail' movie.id %}">{{ movie.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p><h3>No movies are available.</h3></p>
+{% endif %}
+

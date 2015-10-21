@@ -8,8 +8,8 @@ class Movie(models.Model):
     release_date_world = models.DateField()
     release_date_uzb = models.DateField()
     description = models.TextField(max_length=400)
-    IMDB = models.DecimalField(max_length=4)
-    rating = models.DecimalField(max_length=4)
+    IMDB = models.FloatField()
+    rating = models.FloatField()
     age_restriction = models.IntegerField()
     duration = models.TimeField()
 
