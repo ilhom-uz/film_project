@@ -11,7 +11,8 @@ class Movie(models.Model):
     IMDB = models.FloatField()
     rating = models.FloatField()
     age_restriction = models.IntegerField()
-    duration = models.TimeField()
+    duration = models.IntegerField()
+
 
     # Janr, Persons, comments, reviews boglash kere
     # Nado obsudit'

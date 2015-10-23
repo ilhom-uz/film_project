@@ -36,6 +36,8 @@ urlpatterns = [
     # ),
     # Url pattern for Movies page
     url(r'^$', views.index, name='index'),
+    # ex: /movies/5/
+    url(r'^(?P<movie_id>[0-9]+)/$', views.detail, name='detail'),
 
 
 ]
